@@ -25,10 +25,7 @@ var planets = [
   //   cards += '<div class="card"></div>';
   
   const cards = document.querySelectorAll(".card");
-  
-  // var x = document.getElementsByClassName("hover");
-  // console.log(x);
-  
+
   function flipCard() {
     this.classList.add("flipped");
   }
@@ -38,5 +35,4 @@ var planets = [
     cards[i].addEventListener("click", flipCard);
   }
   
-  //Əsas dəyişiklik son sətirdədi. 27-ci sətirdə ümumi bütün card-ları bir yerə yığırsan daha sonra 53-də həmin card-ları bir bir click etdikcə çevrilsin deyə for döngüsünə alırsan. Card-ların sayı çox olduğuna görə döngü ilə yazmasan sadəcə birinə flipped class-ı add olunur. Döngüyə aldıqda click etdikcə əlavə edir. Başqa nəsə sualın varsa yaza bilərsən.
   
